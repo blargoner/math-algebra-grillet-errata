@@ -1,7 +1,9 @@
 % Errata from Abstract Algebra, 2nd ed. by Grillet
 % By John Peloquin
 \documentclass[letterpaper,12pt]{article}
-\usepackage{amsmath,amssymb,amsthm,enumitem,fourier}
+\usepackage{amsmath,amssymb,amsthm,enumitem,diagrams,fourier}
+
+\newcommand{\pres}[2]{\langle\,{#1}\mid{#2}\,\rangle}
 
 % Meta
 \title{Errata from \textit{Abstract Algebra}}
@@ -11,7 +13,31 @@
 \begin{document}
 \maketitle
 \section*{Introduction}
-This document contains errata from~\cite{grillet}.
+This document contains errata from~\cite{grillet}. Positive line numbers count from the top of the page, while negative line numbers count from the bottom of the page. Displayed equations, diagrams, and figures are counted as single lines.
+
+\section*{Chapter~I}
+\begin{itemize}
+\item p.~6, l.~-19: ``by Proposition~1.12'' should be deleted (because there is no such proposition).
+\item p.~11, l.~-10: \(x_1=x_2=\cdots=x_m=-a\) should be \(x_1=x_2=\cdots=x_m=a\).
+\item p.~21, l.~-5: ``By~4.16'' should be ``By~4.9''.
+\item p.~23--4: in the statement and proof of Theorem~5.2, \(f\)~should be~\(\varphi\).
+\item p.~25, l.~3: ``isomorphisms theorems'' should be ``isomorphism theorems''.
+\item p.~33, l.~3,5: \(\varphi\)~should be~\(\pi\).
+\item p.~33, l.~3: \(F\)~should be~\(F_X\).
+\item p.~33, l.~-10: \(\varphi\)~should be~\(\psi\).
+\item p.~34, l.~3: the diagram should be
+\begin{diagram}[nohug]
+X	&\rTo^{\eta}	&F_X			&\rTo^{\pi}			&\pres{X}{R}\\
+	&\rdTo<f		&\dDashto>{\varphi}	&\ldDashto>{\psi}	&\\
+	&			&G				&				&
+\end{diagram}
+\item p.~40, l.~-5: the diagram should be the coproduct diagram
+\begin{diagram}[nohug]
+A	&\rTo^{\iota}		&A\amalg B		&\lTo^{\kappa}	&B\\
+	&\rdTo<{\varphi}	&\dDashto>{\chi}	&\ldTo>{\psi}	&\\
+	&				&G				&			&
+\end{diagram}
+\end{itemize}
 
 % References
 \begin{thebibliography}{0}
